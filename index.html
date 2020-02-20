@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <title>Orianna726</title>
+    </head>
+    <body>
+        <div id="topsector">
+            <a id="mainpage" href="index.html">Orianna726</a>
+        </div>
+        <button id="menu" onclick="
+        if(document.getElementById('off').style.display == 'inline'){
+            document.getElementById('on').style.display = 'inline';
+            document.getElementById('off').style.display = 'none';
+            document.getElementById('menusector').style.display = 'block';
+        }else{
+            document.getElementById('on').style.display = 'none';
+            document.getElementById('off').style.display = 'inline';
+            document.getElementById('menusector').style.display = 'none';
+        }
+        "><span id="off" style="display:inline;">=</span><span id="on" style="display:none;">X</span></button>
+        <nav id="menusector">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <div id="home">
+            <p>
+                <h1>Home</h1>
+                <p>대충 본문</p>
+            </p>
+        </div>
+        <footer>
+            <P onclick="alert('그런거 없다')">개인 정보 보호 정책</P>
+        </footer>
+    </body>
+</html>
